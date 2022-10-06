@@ -1,0 +1,299 @@
+@media (max-width: 1330px) {
+	.header-bottom__container {
+		justify-content: center;
+	}
+
+	.header-bottom__link {
+		margin-right: 76px;
+	}
+
+	.header-bottom__text {
+		margin-right: 25px;
+	}
+
+	.header-bottom__inner {
+		margin-top: 30px;
+	}
+
+	.partners__items {
+		grid-template-columns: repeat(4, 130px);
+		column-gap: 60px;
+		row-gap: 30px;
+	}
+
+	.partners__items::after {
+		width: 750px;
+		right: calc(50% - 750px / 2);
+	}
+
+	.partners__line::before {
+		right: 190px;
+	}
+
+	.partners__line::after {
+		left: 190px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.header__burger {
+		display: block;
+	}
+
+	.header__items {
+		position: fixed;
+		top: calc(50% - 300px / 2);
+		right: -200%;
+		overflow: hidden;
+		width: 300px;
+		height: 300px;
+		background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+		display: block;
+		text-align: center;
+		transition: right 3s, opacity 1s;
+		padding-top: 25px;
+		border: 1px solid var(--light);
+		border-radius: 100%;
+		opacity: 0;
+	}
+
+	.header__items.active {
+		right: calc(50% - 300px / 2);
+		z-index: 10;
+		opacity: 1;
+		transition: opacity 1s;
+	}
+
+	.header__item {
+		position: relative;
+	}
+
+	.header__item:not(:last-child)::after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: calc(50% - 10px / 2);
+		height: 2px;
+		width: 10px;
+		background-color: #fff;
+	}
+
+	.header__item:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.work__container {
+		flex-direction: column-reverse;
+	}
+
+	.work__img {
+		margin-right: 0;
+	}
+
+	.work__inner {
+		margin-bottom: 30px;
+	}
+
+	.work__title {
+		text-align: center;
+	}
+
+	.profession__items {
+		justify-content: center;
+	}
+
+	.profession__item:not(:last-child) {
+		margin-bottom: 40px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 750px) {
+
+	.header__title,
+	.quick-start__title,
+	.profession__title,
+	.partners__title,
+	.programm-learning__title,
+	.team__title,
+	.footer__title {
+		font-size: 30px;
+	}
+
+	.work,
+	.quick-start,
+	.profession,
+	.partners,
+	.programm-learning,
+	.team,
+	.footer {
+		padding-top: 150px;
+	}
+
+	.quick-start__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.profession__title {
+		margin-bottom: 45px;
+	}
+
+	.profession__items {
+		justify-content: center;
+	}
+
+	.profession__item {
+		padding-top: 70px;
+	}
+
+	.profession__item::before {
+		width: 70px;
+		height: 70px;
+	}
+
+	.profession__subtitle {
+		margin-bottom: 10px;
+		margin-right: 0;
+		font-size: 20px;
+	}
+
+	.partners__title {
+		margin-bottom: 40px;
+	}
+
+	.partners__items {
+		grid-template-columns: repeat(4, 70px);
+		column-gap: 10px;
+		row-gap: 15px;
+	}
+
+	.partners__items::after {
+		display: none;
+	}
+
+	.partners__line::before {
+		right: 160px;
+	}
+
+	.partners__line::after {
+		left: 160px;
+	}
+
+	.team__item {
+		margin: 10px;
+	}
+}
+
+@media (max-width: 550px) {
+	.header__button {
+		padding: 5px 15px;
+	}
+
+	.timer__item {
+		margin: 10px;
+	}
+
+	.timer__item:not(:last-child) {
+		margin-right: 0;
+	}
+
+	.header-bottom__link {
+		margin-bottom: 30px;
+	}
+
+	.work__img {
+		max-width: 330px;
+		height: 350px;
+		border-width: 10px;
+	}
+
+	.work__title {
+		font-size: 31px;
+		margin-bottom: 25px;
+	}
+
+	.quick-start__title,
+	.partners__title,
+	.team__title {
+		margin-bottom: 25px;
+		padding-left: 50px;
+	}
+
+	.quick-start__title::before,
+	.partners__title::before,
+	.programm-learning__title::before,
+	.partners__title::before,
+	.team__title::before {
+		width: 40px;
+		height: 40px;
+	}
+
+	.quick-start__text {
+		margin-bottom: 40px;
+	}
+
+	.quick-start__box:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.quick-start__procent {
+		font-size: 30px;
+	}
+
+	.quick-start__descr {
+		margin-top: 15px;
+	}
+
+	.programm-learning__title {
+		padding-top: 50px;
+	}
+
+	.programm-learning__text {
+		margin: 0 auto 45px;
+	}
+
+	.programm-learning__box--right {
+		margin-left: 30px;
+	}
+
+	.programm-learning__box--right p::after {
+		left: -27px;
+		width: 15px;
+	}
+
+	.programm-learning__box--left {
+		margin-right: 30px;
+	}
+
+	.programm-learning__box--left p::after {
+		right: -27px;
+		width: 15px;
+	}
+
+	.programm-learning__info {
+		margin-bottom: 5px;
+	}
+
+	.programm-learning__descr {
+		font-size: 14px;
+	}
+
+	.programm-learning__descr:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.footer__text {
+		margin: 0 auto 40px;
+	}
+
+	.footer__btn {
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+
+	.footer__item:not(:last-child) {
+		margin-right: 20px;
+	}
+}

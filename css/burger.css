@@ -1,0 +1,54 @@
+.burger {
+	position: relative;
+	width: 45px;
+	height: 30px;
+	color: var(--light);
+	transition: all 0.5s;
+}
+
+.burger::before,
+.burger::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--burger-color);
+	transition: all 0.5s;
+}
+
+.burger::before {
+	top: 0;
+}
+
+.burger::after {
+	bottom: 0;
+}
+
+.burger.active::before,
+.burger.active::after {
+  top: 10px;
+  transition: all 0.5s;
+}
+
+.burger.active::before {
+  transform: rotate(45deg);
+}
+
+.burger.active::after {
+  transform: rotate(-45deg);
+}
+
+.burger.active .burger__line {
+  opacity: 0;
+}
+
+.burger__line {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 90%;
+	height: 2px;
+	background-color: var(--burger-color);
+}
