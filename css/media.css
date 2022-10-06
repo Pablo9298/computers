@@ -80,7 +80,7 @@
 
 	.header__item:not(:last-child) {
 		margin-right: 0;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.work__container {
@@ -190,12 +190,12 @@
 		padding: 5px 15px;
 	}
 
-	.timer__item {
-		margin: 10px;
+	.timer__item:not(:last-child) {
+		margin-right: 15px;
 	}
 
-	.timer__item:not(:last-child) {
-		margin-right: 0;
+	.timer__item {
+		margin: 15px;
 	}
 
 	.header-bottom__link {
