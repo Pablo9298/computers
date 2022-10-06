@@ -163,8 +163,8 @@
 	}
 
 	.partners__items {
-		grid-template-columns: repeat(4, 70px);
-		column-gap: 10px;
+		grid-template-columns: repeat(2, 130px);
+		column-gap: 30px;
 		row-gap: 15px;
 	}
 
@@ -286,6 +286,12 @@
 
 	.footer__text {
 		margin: 0 auto 40px;
+	}
+
+	.footer__form {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
 	}
 
 	.footer__btn {
